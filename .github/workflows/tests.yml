@@ -6,10 +6,10 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v2
-            - name: Install pytest and mocker
+            - name: Install pytest
               run: pip install pytest pytest-spec pytest-describe mocker
             - name: Run pytest
-              run: pyteset --spec --color=yes test_brute.py
+              run: pytest --spec --color=yes test_brute.py
     RunFunctionalTests:
         runs-on: ubuntu-latest
         steps:
@@ -18,6 +18,6 @@ jobs:
             - name: Install chromedriver
               uses: nanasess/setup-chromedriver@master
             - name: Install behave
-              uses: pip install behave behave-webdriver
+              run: pip install behave behave-webdriver
             - name: Run behave
               run: behave
