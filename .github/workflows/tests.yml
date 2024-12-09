@@ -7,7 +7,7 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v2
             - name: Install pytest
-              run: pip install pytest pytest-spec pytest-describe mocker
+              run: pip install pytest pytest-spec pytest-describe pytest-mock mocker
             - name: Run pytest
               run: pytest --spec --color=yes test_brute.py
     RunFunctionalTests:
