@@ -8,7 +8,7 @@ So that I can chat with my spy friends like a pro.
         When I add "test" to the inputfield "#letters"
         And I select the "2" option for element "#shift-amount"
         And I click on the button "#submit"
-        Then I expect that element "#decoded_message.p" contains the text "uftu"
+        Then I expect that element "#decoded_message p" contains the text "uftu"
     Scenario: I can successfully decode a secret message
         Given I open the url "https://www.hanginghyena.com/solvers_a/caesar-cipher-decoder"
         # write your steps here
