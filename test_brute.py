@@ -6,7 +6,6 @@ def describe_Brute():
     def cracker():
         return Brute("TDD")
     def describe_bruteOnce():
-        # write your test cases here
         def it_passes_once_with_empty_string():
             b = Brute('')
             return_value = b.bruteOnce('')
@@ -25,7 +24,6 @@ def describe_Brute():
             assert cracker.target == '00ab3eef51b8551de98a6cab9352898aed783a35995285659bbdd40162fda9505aebff62d7bf29fd7474d45f303f3cddd8d3aa0383f45a9f9facd6a8860f7938'
             assert cracker.target != 'TDD'
     def describe_bruteMany():
-        # write your test cases here
         def it_passes_many_with_empty_string(mocker):
             mock_randomGuess = mocker.patch.object(Brute, 'randomGuess', return_value='')
             mock_hash = mocker.patch.object(Brute, 'hash', return_value='cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e')
