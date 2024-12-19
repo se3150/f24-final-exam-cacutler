@@ -20,4 +20,4 @@ jobs:
             - name: Install behave
               run: pip install behave behave-webdriver
             - name: Run behave
-              run: behave features/spy_message.feature
+              run: behave
