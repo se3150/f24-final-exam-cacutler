@@ -1,6 +1,5 @@
 import pytest
 from brute import Brute
-todo = pytest.mark.skip(reason='todo: pending spec')
 def describe_Brute():
     @pytest.fixture
     def cracker():
